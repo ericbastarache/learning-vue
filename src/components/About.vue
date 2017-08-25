@@ -19,8 +19,10 @@ export default {
 h1 {
   color: #ff0000;
 }
-
 div.bordered {
   border: 1px solid #0000ff;
+}
+a {
+  color: #42b983;
 }
 </style>
