@@ -2,6 +2,7 @@
   <div class="bordered">
     <h1>{{aboutText}}</h1>
     <a href="#/">Back To Home</a>
+    <button v-on:click="alertWindow()">Click Me!</button>
   </div>
 </template>
 
@@ -11,7 +12,13 @@ export default {
   data() {
     return {
       aboutText: 'This is About',
+
     };
+  },
+  methods: {
+    alertWindow() {
+      alert('Test');
+    },
   },
 };
 </script>
