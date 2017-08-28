@@ -12,7 +12,6 @@ export default {
   data() {
     return {
       aboutText: 'This is About',
-
     };
   },
   methods: {
