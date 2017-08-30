@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <a href='#/about'>To About</a>
+    <a href='#/data'>Show Data</a>
   </div>
 </template>
 
