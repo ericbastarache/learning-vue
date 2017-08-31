@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Hello from '@/components/Hello';
 import About from '@/components/About';
 import Data from '@/components/Data';
+import ListContainer from '@/components/ListContainer';
 
 Vue.use(Router);
 
@@ -21,6 +22,11 @@ export default new Router({
     path: '/data',
     name: 'Data',
     component: Data,
+  },
+  {
+    path: '/list',
+    name: 'ListContainer',
+    component: ListContainer,
   },
   ],
 });
