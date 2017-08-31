@@ -23,7 +23,10 @@
         return this.items;
       },
       addItem() {
-        return this.items.push({ id: this.items.length, name: 'Test' });
+        this.items.push({ id: this.items.length, name: 'Test' });
+        const obj = Object.assign({}, this.items);
+        this.$set(this.items, obj);
+        // return this.items.push({ id: this.items.length, name: 'Test' });
       },
     },
   };
