@@ -3,6 +3,7 @@
   <ul>
     <item v-for="item in items" v-bind:key="item.id"></item>
   </ul>
+  <input v-model="itemText" @keyup.enter="addItem()" />
   <button @click="addItem()">Add New Item</button>
 </div>
 </template>
@@ -16,6 +17,7 @@
     data() {
       return {
         items: [],
+        itemText: '',
       };
     },
     methods: {
@@ -23,7 +25,7 @@
         return this.items;
       },
       addItem() {
-        this.items.push({ id: this.items.length, name: 'Test' });
+        this.items.push({ id: this.items.length, name: this.itemText });
         const obj = Object.assign({}, this.items);
         this.$set(this.items, obj);
         // return this.items.push({ id: this.items.length, name: 'Test' });
