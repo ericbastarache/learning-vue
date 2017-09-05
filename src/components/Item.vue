@@ -1,6 +1,6 @@
 <template>
   <li>
-    <a href="#">{{item}}</a>
+    <a href="#/item">{{item}}</a>
   </li>
 </template>
 
